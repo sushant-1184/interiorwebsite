@@ -13,12 +13,12 @@ const Navbar = () => {
                 <input type="checkbox" id="check" />
                 <label for="check" className="checkbtn">
                     <BsList />
-                </label>
+                </label> 
                 <div className="logo">
                     <Link to='/'><img src={logoimg} alt="logo" /></Link>
                 </div>
                 <ul className='nav-list-links'>
-                    <li><NavLink to='/' className="nav-link">Home </NavLink></li>
+                    
                     <li><NavLink to='/service' className="nav-link"> Services </NavLink></li>
                     <li><Dropdown className='services-drop'>
                         {/* <Dropdown.Toggle className="nav-link" id="dropdown-basic">

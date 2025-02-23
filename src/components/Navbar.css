@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", serif;
+}
+  
+  nav {
+    background-color: white;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0 5px 10px rgba(206, 206, 216, 1);
+  }
+  
+  .logo img{
+    width: 9rem;
+  }
+  .nav-list-links li a{
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .nav-list-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-list-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-list-links li .nav-link {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-list-links li .nav-link:hover {
+    color: #7C877F;
+  }
+  .services-drop{
+    font-size: 16px;
+  }
+  .checkbtn {
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  .getintouch-btn .cont-btn{
+    background-color: #7C877F;
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s;
+  }
+  .getintouch-btn .cont-btn:hover{
+    background-color: #000;
+  }
+  .btn-primary{
+    --bs-btn-active-bg: none;
+  }
+  .dropdown-menu{
+    --bs-dropdown-link-active-bg: none;
+  }
+  #dropdown-basic:hover{
+    background-color: transparent;
+  }
+  .drop-space{
+    padding: 2px 20px;
+  }
+
+  @media (max-width: 768px) {
+    .checkbtn {
+      display: block;
+      order: 1;
+      margin-right: 20px;
+    }
+  
+    .nav-list-links {
+      position: fixed;
+      top: 80px;
+      right: -100%;
+      background-color: white;
+      width: 100%;
+      height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s;
+      z-index: 1;
+    }
+  
+    .nav-list-links li {
+      margin: 12px 0;
+    }
+  
+    .nav-list-links li .nav-link {
+      font-size: 16px;
+    }
+    .services-drop{
+        font-size: 16px;
+      }
+    #check:checked ~ .nav-list-links {
+      right: 0;
+    }
+  }
